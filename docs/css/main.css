@@ -105,6 +105,14 @@ footer .social__image:hover {
   border-color: #e980e7;
 }
 
+@media screen and (max-width: 750px) {
+  .main__text h1 {
+    font-size: 2rem;
+  }
+  .main__text p {
+    font-size: 1.1rem;
+  }
+}
 @media screen and (max-width: 550px) {
   .main {
     grid-template-columns: 1fr;
