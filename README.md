@@ -35,7 +35,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://nerijusnoreika.github.io/huddle-landing-page-with-single-introductory-section/)
 
 ## My process
 
