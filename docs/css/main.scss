@@ -1,0 +1,165 @@
+/*****************************************************
+                         VARS
+*****************************************************/
+
+$primaryViolet: hsl(257, 40%, 49%);
+$primarySoftMagenta: hsl(300, 69%, 71%);
+
+
+/*****************************************************
+                         RESETS                           
+*****************************************************/
+
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    background: #674bb1 url('./../img/bg-desktop.svg') ;
+    color: white;
+}
+
+p {
+    line-height: 1.7;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*****************************************************
+                         HEADER                           
+*****************************************************/
+
+.header__brand {
+    &_img {
+        max-width:200px;
+        width: 100%;
+    }
+}
+
+
+/*****************************************************
+                         MAIN
+*****************************************************/
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem auto;
+    gap: 3rem;
+    &__image {
+        max-width: 600px;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+
+        h1 {
+            margin: 0;
+        }
+        &_register {
+            text-decoration: none;
+            background: white;
+            padding: .8rem 3.5rem;
+            color: #54438e;
+            box-shadow: 0px 0px 15px 0px #4a3c73;
+            border-radius: 15px;
+
+            &:hover {
+                background: #e980e7;
+                color: white;
+                
+            }
+        }
+    }
+}
+
+
+/*****************************************************
+                         FOOTER
+*****************************************************/
+
+footer {
+    display: flex;
+}
+
+footer .social {
+    display: flex;
+    margin-left: auto;
+    gap: 10px;
+    &__image {
+        width: 20px;
+        height: auto;
+        display: flex;
+        padding: .5rem;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        fill: white;
+
+        &:hover {
+            cursor: pointer;
+            fill: #e980e7;
+            border-color: #e980e7;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+    .main {
+        grid-template-columns: 1fr;
+        margin: 1rem auto 3rem;
+        gap: 1rem;
+
+        &__text {
+            align-items: center;
+
+            h1, p {
+                text-align: center;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: .9em;
+            }
+
+            &_register {
+                padding-right: 6rem;
+                padding-left: 6rem;
+            }
+        }
+       
+    }
+    footer {
+        .social {
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    }
+}
